@@ -1,0 +1,13 @@
+version: '3'
+services:
+  recommendation:
+    image: overfitting-brothers:latest
+    runtime: nvidia
+    container_name: overfitting-brothers
+    environment:
+      TZ: Asia/Seoul
+      NVIDIA_VISIBLE_DEVICES: 1
+    volumes:
+      - ./:/CCI2024
+    stdin_open: true 
+    tty: true        

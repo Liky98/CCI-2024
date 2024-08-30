@@ -1,0 +1,16 @@
+python3 -m run.train \
+    --model_id beomi/Yi-Ko-34B-Chat-Preview \
+    --save_local_dir_path resource/results/05_YI \
+    --push_to_hub \
+    --hub_model_name overfit-brothers/05_YI \
+    --HF_TOKEN $HF_TOKEN \
+    --custom_template default \
+    --prompt_template yi-ko \
+    --use_unsloth \
+    --use_validation_data \
+    --use_additional_data \
+    --gradient_accumulation_steps 16 \
+    --lr 2e-4 \
+    --epoch 1 \
+    --batch_size 4 \
+    --max_seq_length 2048

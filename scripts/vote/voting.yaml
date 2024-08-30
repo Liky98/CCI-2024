@@ -1,0 +1,7 @@
+paths:
+  - 'results/01_STOCK.json'
+  - 'results/02_GEMMA.json'
+  - 'results/03_MISTRAL.json'
+  - 'results/04_STOCK.json'
+  - 'results/05_YI.json'
+  - 'results/06_YI.json'

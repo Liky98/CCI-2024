@@ -1,0 +1,15 @@
+python3 -m run.train \
+    --model_id unsloth/Mistral-Nemo-Instruct-2407-bnb-4bit \
+    --save_local_dir_path resource/results/03_MISTRAL \
+    --push_to_hub \
+    --hub_model_name overfit-brothers/03_MISTRAL \
+    --HF_TOKEN $HF_TOKEN \
+    --custom_template default \
+    --prompt_template no \
+    --use_unsloth \
+    --use_validation_data \
+    --gradient_accumulation_steps 16 \
+    --lr 2e-4 \
+    --epoch 1 \
+    --batch_size 4 \
+    --max_seq_length 2048
